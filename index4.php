@@ -7,6 +7,7 @@
 <head>
     <meta charset='UTF-8'/>
     <title>Привет редирект</title>
+    <script src ></script>
 </head>
 <body>
 
@@ -20,12 +21,19 @@
 
 <?php
 function number ($j)
-{$n=0;
+{$n=0;$c=0;
     if ($j >= 0) {
         for ($i = 1; $i >= 0; $i++) {
-            $n.=' '.$i;
+            //$k=(string)($i);
+            $k=strlen((string)($i));
+            if (($i%$k)==0)
+            {
+                $c=$c+1;
+                //var_dump($k);
+                $n.=' '.$i;
+            }
             //echo $n;
-            if ($i == $j) {
+            if ($c == $j) {
                 break;
             }
         }
@@ -43,12 +51,12 @@ function number ($j)
     </label>
     <input type="text" name="refIn"/>
 
-    <input type="submit" value="поменять автоматически" /><br><br>
+    <input type="submit" class="autoButton" value="поменять автоматически" /><br><br>
     <label>
         Введите вашу короткую ссылку &nbsp &nbsp
     </label>
     <input type="text" name="refMy"/>
-    <input type="submit" value="поменять на мою ссылку" />
+    <input type="submit" class="myButton" value="поменять на мою ссылку" />
 </form>
 
 <br>
