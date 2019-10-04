@@ -4,6 +4,7 @@ body{
 li{
    width:50%;
    height: 50px;
+   border: 2px solid;
    background-color: green;
    border-rsdius: 5px;
 }
