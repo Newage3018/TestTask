@@ -8,7 +8,7 @@ li{
    background-color: green;
    border-radius: 5px;
    margin-bottom: 20px;
-   type: none;
+   list-style-type: none;
 }
 a{
    
