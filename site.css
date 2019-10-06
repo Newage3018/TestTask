@@ -2,11 +2,9 @@ body{
    
 }
 li{
-/*    width:50%;
+   width:50%;
    height: 50px;
-   border: 2px solid;
-   background-color: green;
-   border-radius: 5px; */
+   
    margin-bottom: 20px;
    list-style-type: none;
    
